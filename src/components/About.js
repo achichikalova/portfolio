@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './About.scss';
 
 const About = () => {
   return (
-    <div>About</div>
+    <section className='about'>
+      
+    </section>
   )
 }
 
-export default About
+export default About;

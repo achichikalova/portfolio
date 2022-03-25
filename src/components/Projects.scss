@@ -1,0 +1,39 @@
+.myProjects {
+  position: relative;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#ffc107, #e91e63);
+    border-radius: 50%;
+    transform: translate(20vw, -10vh);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#2196f3, #e91e63);
+    border-radius: 50%;
+    transform: translate(-20vw, 12vh);
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

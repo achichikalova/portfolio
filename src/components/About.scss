@@ -1,3 +1,5 @@
+$primary: #00eeff;
+
 .about {
   background: #121212;
   width: 100%;
@@ -34,18 +36,18 @@
         height: 20px;
         border-radius: 50%;
         background: transparent;
-        border: 3px solid #00efff;
+        border: 3px solid $primary;
         box-sizing: border-box;
         box-shadow: 
-          0 0 20px #00efff,
-          -30px -30px 0 #00efff,
-          -30px -30px 20px #00efff,
-          30px 30px 0 #00efff,
-          30px 30px 20px #00efff,
-          30px -30px 0 #00efff,
-          30px -30px 20px #00efff,
-          -30px 30px 0 #00efff,
-          -30px 30px 20px #00efff;
+          0 0 20px $primary,
+          -30px -30px 0 $primary,
+          -30px -30px 20px $primary,
+          30px 30px 0 $primary,
+          30px 30px 20px $primary,
+          30px -30px 0 $primary,
+          30px -30px 20px $primary,
+          -30px 30px 0 $primary,
+          -30px 30px 20px $primary;
         animation: animate 5s linear infinite;
         animation-delay: calc(-.25s * var(--i));
         transform-origin: 20px;
@@ -57,15 +59,15 @@
         width: 0;
         height: 0;
         box-shadow:
-          0 0 20px #00efff,
-          -200px -200px 0 #00efff,
-          -200px -200px 20px #00efff,
-          200px 200px 0 #00efff,
-          200px 200px 20px #00efff,
-          200px -200px 0 #00efff,
-          200px -200px 20px #00efff,
-          -200px 200px 0 #00efff,
-          -200px 200px 20px #00efff;
+          0 0 20px $primary,
+          -200px -200px 0 $primary,
+          -200px -200px 20px $primary,
+          200px 200px 0 $primary,
+          200px 200px 20px $primary,
+          200px -200px 0 $primary,
+          200px -200px 20px $primary,
+          -200px 200px 0 $primary,
+          -200px 200px 20px $primary;
         transform-origin: 250px;
       }
   }

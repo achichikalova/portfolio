@@ -5,19 +5,67 @@
 
   .content {
     position: relative;
-    min-width: 350px;
-    min-height: 400px;
+    min-width: 60vw;
+    min-height: 50vh;
     background: rgba(255, 255, 255, .1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
     border: 1px solid rgba(255, 255, 255, .5);
     border-right: 1px solid rgba(255, 255, 255, .2);
     border-bottom: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 10px;
     padding: 20px;
     backdrop-filter: blur(25px);
+    filter: hue-rotate(90deg) brightness(70%) grayscale(50%);
+
+    &:hover {
+      filter: none;
+    }
 
     .title {
-      font-size: clamp(1.1rem, 8vw, 2.2rem);
+      font-size: clamp(1.1rem, 3rem, 4rem);
+      margin-bottom: 2rem;
+      text-align: right;
+    }
+
+    img {
+      max-width: 450px;
+      height: auto;
+      position: absolute;
+      left: -100px;
+      top: 100px;
+    }
+
+    p {
+      position: absolute;
+      width: 450px;
+      right: 1rem;
+      top: 200px;
+      font-size: clamp(.6rem, 1.1rem, 1.3rem);
+      // text-align: right;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-block: 1rem;
+      
+      li {
+        list-style: none;
+        margin-inline: 10px;
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      font-size: clamp(1rem, 2rem, 1.3rem);
+
+      a {
+        color: #fff;
+        margin: .6rem;
+      }
     }
   }
 }

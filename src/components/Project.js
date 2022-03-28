@@ -8,6 +8,7 @@ const Project = () => {
     <div className="project">
       <div className="content">
         <h3 className="title">My Project</h3>
+        <img src="https://github.com/achichikalova/Stacks/blob/main/frontend/public/static/images/readme/main_page.png?raw=true" alt="title" />
         <p className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
           architecto. Accusantium obcaecati ipsa voluptates velit.

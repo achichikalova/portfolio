@@ -1,7 +1,7 @@
 .project {
   margin: 2rem;
   color: #fff;
-  z-index: 11;
+  z-index: 1000;
 
   .content {
     position: relative;
@@ -13,8 +13,8 @@
     border-right: 1px solid rgba(255, 255, 255, .2);
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     padding: 20px;
-    backdrop-filter: blur(25px);
     filter: hue-rotate(90deg) brightness(70%) grayscale(50%);
+    backdrop-filter: blur(25px);
 
     &:hover {
       filter: none;
@@ -23,7 +23,18 @@
     .title {
       font-size: clamp(1.1rem, 3rem, 4rem);
       margin-bottom: 2rem;
-      text-align: right;
+      text-align: right;     
+    }
+
+    .description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
     }
 
     img {
@@ -40,7 +51,7 @@
       right: 1rem;
       top: 200px;
       font-size: clamp(.6rem, 1.1rem, 1.3rem);
-      // text-align: right;
+      text-align: right;
     }
 
     ul {

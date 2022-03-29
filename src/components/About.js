@@ -20,7 +20,7 @@ const About = () => {
             <em>React JS Developer</em>
           </h3>
         </Parallax>
-        <Parallax speed={-5}>
+        <Parallax speed={-10}>
           <p>
             Dedicated, efficient, organized, and driven web developer with
             experience in QA, that will always <em>go above and beyond</em> to

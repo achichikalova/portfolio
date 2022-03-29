@@ -5,6 +5,10 @@
 
   .content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     min-width: 60vw;
     min-height: 50vh;
     background: rgba(255, 255, 255, .1);
@@ -15,6 +19,7 @@
     padding: 20px;
     filter: hue-rotate(90deg) brightness(70%) grayscale(50%);
     backdrop-filter: blur(25px);
+    transition: all .2s ease-in-out;
 
     &:hover {
       filter: none;
@@ -23,14 +28,14 @@
     .title {
       font-size: clamp(1.1rem, 3rem, 4rem);
       margin-bottom: 2rem;
-      text-align: right;     
+      text-align: right;
     }
 
     .description {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: row;
+      flex-direction: column;
 
       &:nth-child(even) {
         flex-direction: row-reverse;
@@ -38,7 +43,7 @@
     }
 
     img {
-      max-width: 450px;
+      max-width: clamp(450px, 500px, 600px);
       height: auto;
       position: absolute;
       left: -100px;
@@ -46,7 +51,6 @@
     }
 
     p {
-      position: absolute;
       width: 450px;
       right: 1rem;
       top: 200px;
@@ -60,10 +64,14 @@
       justify-content: flex-end;
       align-items: center;
       margin-block: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+      line-height: 2rem;
       
       li {
         list-style: none;
         margin-inline: 10px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.6);
       }
     }
 
@@ -71,11 +79,15 @@
       display: flex;
       justify-content: end;
       align-items: center;
-      font-size: clamp(1rem, 2rem, 1.3rem);
+      font-size: clamp(1.2rem, 1.6rem, 2rem);
 
       a {
         color: #fff;
         margin: .6rem;
+
+        &:hover {
+          color: rgb(0, 255, 255);
+        }
       }
     }
   }

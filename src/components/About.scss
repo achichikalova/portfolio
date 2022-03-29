@@ -86,8 +86,11 @@ $primary: #00eeff;
       letter-spacing: 3px;
       line-height: 2rem;
     }
+
     em {
-      color: #ffffff;
+      color: $primary;
+      // animation: multicolor 5s linear infinite;
+
     }
   }
 
@@ -101,4 +104,14 @@ $primary: #00eeff;
       filter: hue-rotate(360deg);
     }
   }
+
+  // @keyframes multicolor {
+  //   0% {
+  //     filter: hue-rotate(0deg);
+  //   }
+  //   100% {
+  //     filter: hue-rotate(360deg);
+
+  //   }
+  // }
 }

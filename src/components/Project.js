@@ -11,10 +11,11 @@ const Project = () => {
         <div className="content">
           <h3 className="title">My Project</h3>
           <div className="description">
-            <img
+            <a href="#">
+              <img
               src="https://github.com/achichikalova/Stacks/blob/main/frontend/public/static/images/readme/main_page.png?raw=true"
-              alt="title"
-            />
+              alt="title"/>
+            </a>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               architecto. Accusantium obcaecati ipsa voluptates velit.

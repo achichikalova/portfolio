@@ -5,7 +5,7 @@ import './Projects.scss';
 const Projects = () => {
   return (
     <section className='myProjects'>
-      <div className="title">My Projects</div>
+      <div className="projects-title">My Projects</div>
       <div className='projects'>
         <Project />
         <Project />

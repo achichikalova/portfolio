@@ -13,8 +13,9 @@ const Project = () => {
           <div className="description">
             <a href="#">
               <img
-              src="https://github.com/achichikalova/Stacks/blob/main/frontend/public/static/images/readme/main_page.png?raw=true"
-              alt="title"/>
+                src="https://github.com/achichikalova/Stacks/blob/main/frontend/public/static/images/readme/main_page.png?raw=true"
+                alt="title"
+              />
             </a>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,

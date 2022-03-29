@@ -1,18 +1,18 @@
-import React from 'react';
-import Project from './Project';
-import './Projects.scss';
+import React from "react";
+import Project from "./Project";
+import "./Projects.scss";
 
 const Projects = () => {
   return (
-    <section className='myProjects'>
+    <section className="myProjects">
       <div className="projects-title">My Projects</div>
-      <div className='projects'>
+      <div className="projects">
         <Project />
         <Project />
         <Project />
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Projects;

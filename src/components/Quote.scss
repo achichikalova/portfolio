@@ -1,0 +1,25 @@
+.quote {
+  color: rgba(255, 255, 255, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: clamp(5rem, 7rem, 10rem) auto;
+
+  p {
+    font-size: clamp(3rem, 5rem, 6rem);
+    text-align: center;
+    font-family: 'Passions Conflict', cursive;
+    color: rgba(255, 255, 255, .7);
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .decor {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Passions Conflict', cursive;
+  }
+}

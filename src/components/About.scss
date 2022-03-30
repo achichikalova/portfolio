@@ -6,7 +6,6 @@ $primary: #00eeff;
   justify-content: center;
   align-items: flex-start;
   margin-left: 3rem;
-  width: 100%;
   color: #fff;
 
   .description {
@@ -17,12 +16,11 @@ $primary: #00eeff;
     margin-left: 3rem;
 
     p {
-      font-size: clamp(1.2rem, 2rem, 3rem);
+      font-size: clamp(1.2rem, 1.6rem, 2rem);
       color: rgba(255, 255, 255, 0.8);
       width: 50vw;
       padding-right: 4rem;
       text-align: justify;
-      width: 50vw;
   
       em {
         color: $primary;

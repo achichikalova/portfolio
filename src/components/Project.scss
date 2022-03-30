@@ -17,7 +17,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     padding: 20px;
     filter: hue-rotate(90deg) brightness(70%) grayscale(50%);
-    backdrop-filter: blur(25px);
     transition: all .2s ease-in-out;
 
     &:hover {

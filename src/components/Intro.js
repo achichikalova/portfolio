@@ -1,15 +1,15 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
-import "./About.scss";
+import "./Intro.scss";
 
-const About = () => {
+const Intro = () => {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const span = numbers.map((num) => {
     return <span style={{ "--i": num }}></span>;
   });
 
   return (
-    <section className="about">
+    <section className="intro">
       <div className="magic">{span}</div>
       <div className="content">
         <Parallax speed={10}>
@@ -38,4 +38,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Intro;

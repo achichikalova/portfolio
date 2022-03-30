@@ -7,7 +7,7 @@ import { Parallax } from "react-scroll-parallax";
 const Project = () => {
   return (
     <div className="project">
-      <Parallax speed={10}>
+      <Parallax speed={10} style={{backdropFilter: 'blur(10px)'}}>
         <div className="content">
           <h3 className="title">My Project</h3>
           <div className="description">

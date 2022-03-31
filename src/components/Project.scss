@@ -41,11 +41,11 @@
     }
 
     img {
-      max-width: clamp(500px, 700px, 800px);
+      max-width: clamp(400px, 600px, 700px);
       height: auto;
       position: absolute;
-      left: -100px;
-      top: 100px;
+      left: -10vw;
+      top: 5vh;
     }
 
     p {

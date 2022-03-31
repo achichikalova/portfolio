@@ -22,17 +22,17 @@ const Project = () => {
               architecto. Accusantium obcaecati ipsa voluptates velit.
             </p>
           </div>
-          <ul className="tech">
+          <ul className="tech" title="tech stack">
             <li>React.js</li>
             <li>Node.js</li>
             <li>Express.js</li>
             <li>Postgres</li>
           </ul>
           <div className="links">
-            <a href="#">
+            <a href="#" title="demo">
               <FiExternalLink />
             </a>
-            <a href="#">
+            <a href="#" title="source code">
               <AiFillGithub />
             </a>
           </div>

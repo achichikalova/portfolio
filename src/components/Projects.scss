@@ -9,6 +9,7 @@
   overflow: hidden;
   color: #fff;
   margin-bottom: 2rem;
+  padding: 0 100px;
 
   &::before {
     content: '';
@@ -37,7 +38,12 @@
     align-items: center;
 
   }
-  .projects-title {
-    font-size: clamp(2.5rem, 3rem, 4rem);
+  .code {
+    font-size: clamp(1.2rem, 2rem, 3rem);
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    padding: 2rem 0;
+
   }
 }

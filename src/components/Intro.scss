@@ -1,7 +1,6 @@
 $primary: #00eeff;
 
 .intro {
-  background-color: #121212;
   width: 100%;
   min-height: 100vh;
   color: #bbb;
@@ -10,7 +9,7 @@ $primary: #00eeff;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 100px;
   overflow: hidden;
 
   .magic {
@@ -68,7 +67,7 @@ $primary: #00eeff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 
     h2 {
       font-size: clamp(5rem, 5vw, 8rem);
@@ -78,19 +77,19 @@ $primary: #00eeff;
       font-size: clamp(1.1rem, 8vw, 2.2rem);
       text-transform: uppercase;
       margin-bottom: 3rem;
+      color: $primary;
     }
 
     p {
       font-size: clamp(1.1rem, 8vw, 1.2rem);
-      text-align: justify;
       letter-spacing: 3px;
       line-height: 2rem;
+      color: rgba(255, 255, 255, 0.8);
+      width: 50vw;
     }
 
     em {
       color: $primary;
-      // animation: multicolor 5s linear infinite;
-
     }
   }
 
@@ -104,14 +103,4 @@ $primary: #00eeff;
       filter: hue-rotate(360deg);
     }
   }
-
-  // @keyframes multicolor {
-  //   0% {
-  //     filter: hue-rotate(0deg);
-  //   }
-  //   100% {
-  //     filter: hue-rotate(360deg);
-
-  //   }
-  // }
 }

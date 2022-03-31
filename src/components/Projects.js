@@ -5,12 +5,13 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <section className="myProjects">
-      <div className="projects-title">My Projects</div>
+      <div className="code"> &lt;projects&gt;</div>
       <div className="projects">
         <Project />
         <Project />
         <Project />
       </div>
+      <div className="code"> &lt;projects&gt;</div>
     </section>
   );
 };

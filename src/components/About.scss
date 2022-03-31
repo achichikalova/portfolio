@@ -3,10 +3,8 @@ $primary: #00eeff;
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 3rem;
   color: #fff;
+  padding: 0 100px 15px 100px;
 
   .description {
     display: flex;
@@ -16,11 +14,11 @@ $primary: #00eeff;
     margin-left: 3rem;
 
     p {
-      font-size: clamp(1.2rem, 1.6rem, 2rem);
+      font-size: clamp(1.1rem, 8vw, 1.2rem);
       color: rgba(255, 255, 255, 0.8);
       width: 50vw;
       padding-right: 4rem;
-      text-align: justify;
+      letter-spacing: 3px;
   
       em {
         color: $primary;
@@ -32,5 +30,7 @@ $primary: #00eeff;
     font-size: clamp(1.2rem, 2rem, 3rem);
     text-align: left;
     font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    padding: 2rem;
   }
 }

@@ -17,7 +17,7 @@ const Intro = () => {
         </Parallax>
         <Parallax speed={1}>
           <h3>
-            <em>React JS Developer</em>
+            React JS Developer
           </h3>
         </Parallax>
         <Parallax speed={-10}>
@@ -29,8 +29,7 @@ const Intro = () => {
             natural <em>problem-solving </em>
             mindset. <br />I see <em>problems as opportunities</em>, a chance to
             learn something new. I love to work with people, I'm a great team
-            player who is ready to <em>take ownership</em>. I love learning new
-            things, spending time with my family, running, hiking, photography.
+            player who is ready to <em>take ownership</em>.
           </p>
         </Parallax>
       </div>

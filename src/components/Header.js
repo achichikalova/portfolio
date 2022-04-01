@@ -43,7 +43,7 @@ const Header = () => {
         backgroundColor: scrollUp && !top ? "#3636367e" : "transparent",
       }}
     >
-      <Loader />
+      <a href="/"><Loader /></a>
       <nav className="nav">
         <a href="#intro">Intro</a>
         <a href="#projects">Projects</a>

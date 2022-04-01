@@ -6,7 +6,7 @@ const Hand = (props) => {
     <g {...props}>
        <rect
           width="60.85"
-          height="141.74"
+          height="100%"
           x="624.01"
           y="254.09"
           fill="#656478"
@@ -15,7 +15,7 @@ const Hand = (props) => {
         ></rect>
         <rect
           width="60.85"
-          height="141.74"
+          height="100%"
           x="628.09"
           y="254.88"
           fill="#3f3d56"
@@ -60,7 +60,7 @@ const Animation = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30vw"
-        height="auto"
+        height="100%"
         data-name="Layer 1"
         viewBox="0 0 1144 637"
       >

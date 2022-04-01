@@ -5,7 +5,7 @@ function Loader() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="50"
-      height="auto"
+      height="100%"
       fill="none"
       viewBox="0 0 135 117"
     >
@@ -17,7 +17,7 @@ function Loader() {
         <filter
           id="filter0_d_4_16"
           width="135"
-          height="117"
+          height="100%"
           x="0"
           y="0"
           colorInterpolationFilters="sRGB"

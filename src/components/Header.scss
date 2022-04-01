@@ -7,12 +7,12 @@ $fontColor: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem;
+  padding: 0 1.2rem;
   z-index: 11;
   position: fixed;
   transition: all .1s ease-in-out;
-  padding-top: 3rem;
   background-color: transparent;
+  box-shadow: 0 10px 30px -10px #121212a9;
 
   nav {
     width: 40vw;
@@ -27,7 +27,6 @@ $fontColor: rgba(255, 255, 255, 0.8);
 
       &:hover {
         color: $primary;
-        border-bottom: $primary;
       }
     }
 
@@ -38,6 +37,7 @@ $fontColor: rgba(255, 255, 255, 0.8);
       display: inline-block;
       background-color: #fff;
       margin: 20px;
+      cursor: pointer;
 
       &::before, &::after {
         content: '';

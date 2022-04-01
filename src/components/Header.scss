@@ -2,19 +2,32 @@ $primary: #00eeff;
 $fontColor: rgba(255, 255, 255, 0.8);
 
 .header-container {
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem;
-
-  .logo {
-  }
+  z-index: 11;
+  position: fixed;
+  transition: all .1s ease-in-out;
 
   nav {
     width: 40vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $fontColor;
+      font-size: clamp(1.2rem, 1.3rem, 1.5rem);
+
+      &:hover {
+        color: $primary;
+        border-bottom: $primary;
+      }
+    }
 
     button {
       position: relative;
@@ -35,7 +48,7 @@ $fontColor: rgba(255, 255, 255, 0.8);
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: var(--y);
         left: var(--x);
@@ -44,7 +57,7 @@ $fontColor: rgba(255, 255, 255, 0.8);
         height: 0px;
         border-radius: 50%;
         background-color: $primary;
-        transition: width .5s, height .5s;
+        transition: width 0.5s, height 0.5s;
 
         &:hover {
           width: 300px;

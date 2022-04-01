@@ -4,7 +4,7 @@ import "./Projects.scss";
 
 const Projects = () => {
   return (
-    <section className="myProjects">
+    <section className="myProjects" id="projects">
       <div className="code"> &lt;projects&gt;</div>
       <div className="projects">
         <Project />

@@ -9,7 +9,7 @@ const Intro = () => {
   });
 
   return (
-    <section className="intro">
+    <section className="intro" id="intro">
       <div className="magic">{span}</div>
       <div className="content">
         <Parallax speed={10}>

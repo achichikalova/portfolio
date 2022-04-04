@@ -12,28 +12,23 @@ const Project = ({ data }) => {
           <h3 className="title">{data.title}</h3>
           <div className="description">
             <a href={data.demo || data.source}>
-              <img
-                src={data.img}
-                alt={data.title}
-              />
+              <Parallax speed={5}>
+                <img src={data.img} alt={data.title} />
+              </Parallax>
             </a>
-            <p>
-              {data.description}
-            </p>
+            <p>{data.description}</p>
           </div>
           <ul className="tech" title="tech stack">
-            {data.stacks.map(stack => {
-              return(
-                <li>{stack}</li>
-              )
+            {data.stacks.map((stack) => {
+              return <li>{stack}</li>;
             })}
           </ul>
           <div className="links">
-            {data.demo &&
+            {data.demo && (
               <a href={data.demo} title="demo">
                 <FiExternalLink />
               </a>
-            }           
+            )}
             <a href={data.source} title="source code">
               <AiFillGithub />
             </a>

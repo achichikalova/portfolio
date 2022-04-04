@@ -4,13 +4,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: clamp(5rem, 7rem, 10rem) auto;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 
   p {
     font-size: clamp(3rem, 5rem, 6rem);
     text-align: center;
     font-family: 'Passions Conflict', cursive;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .7);    
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
   }
 
   span {

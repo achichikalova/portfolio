@@ -9,22 +9,25 @@
     transform-origin: center;
     transform-box: fill-box;
   }
-}
+  @keyframes move {
+    from {
+      transform: rotateZ(5deg);
+    }
+    to {
+      transform: rotateZ(0deg);
+    }
+  }
+  
+  @keyframes wave {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(10deg);
+    }
+  }
 
-@keyframes move {
-  from {
-    transform: rotateZ(5deg);
-  }
-  to {
-    transform: rotateZ(0deg);
-  }
-}
-
-@keyframes wave {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(10deg);
+  @media screen and (max-width: 768px) {
+      padding-bottom: 50px;
   }
 }

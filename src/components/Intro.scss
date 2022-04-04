@@ -58,6 +58,16 @@ $primary: #00eeff;
         -200px 200px 20px $primary;
       transform-origin: 250px;
     }
+
+    @media screen and (max-width: 1080px) {
+      margin: 100px auto 200px auto;
+      width: 25vw;
+      height: 20vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .content {
@@ -70,7 +80,16 @@ $primary: #00eeff;
     align-items: flex-start;
 
     h2 {
-      font-size: clamp(5rem, 5vw, 8rem);
+      font-size: clamp(4rem, 5vw, 8rem);
+
+      @media screen and (max-width: 1080px) {
+        margin-bottom: 2rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
     }
 
     h3 {
@@ -78,6 +97,10 @@ $primary: #00eeff;
       text-transform: uppercase;
       margin-bottom: 3rem;
       color: $primary;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.7rem;
+      }
     }
 
     p {
@@ -85,11 +108,20 @@ $primary: #00eeff;
       letter-spacing: 3px;
       line-height: 2rem;
       color: rgba(255, 255, 255, 0.8);
-      width: 50vw;
+      width: 60vw;
+
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
     }
 
     em {
       color: $primary;
+    }
+
+    @media (max-width: 1080px) {
+      width: 100%;
+      margin: 0 auto;
     }
   }
 
@@ -102,5 +134,15 @@ $primary: #00eeff;
       transform: rotate(360deg);
       filter: hue-rotate(360deg);
     }
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    min-height: auto;
+    padding-top: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 30px;
   }
 }

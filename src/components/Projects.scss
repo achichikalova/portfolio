@@ -9,10 +9,10 @@
   overflow: hidden;
   color: #fff;
   margin-bottom: 2rem;
-  padding: 0 100px;
+  padding: 0 50px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 400px;
     height: 400px;
@@ -22,13 +22,17 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 500px;
     height: 500px;
     background: linear-gradient(to right bottom, #eb978c, #8590ee);
     border-radius: 50%;
     transform: translate(-20vw, 50vh);
+
+    @media only screen and (max-width: 1080px) {
+      transform: translate(-20vw, 25vh);
+    }
   }
 
   .projects {
@@ -36,14 +40,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   .code {
     font-size: clamp(1.2rem, 2rem, 3rem);
     text-align: left;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem;
 
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 }

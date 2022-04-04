@@ -5,6 +5,8 @@ $primary: #00eeff;
   flex-direction: column;
   color: #fff;
   padding: 0 100px 15px 100px;
+  width: 100%;
+  height: auto;
 
   .description {
     display: flex;
@@ -19,18 +21,36 @@ $primary: #00eeff;
       width: 50vw;
       padding-right: 4rem;
       letter-spacing: 3px;
-  
+
       em {
         color: $primary;
       }
+
+      @media screen and (max-width: 768px) {
+        width: 80vw;
+        padding-right: 50px;
+        text-align: justify;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
     }
   }
 
   .code {
     font-size: clamp(1.2rem, 2rem, 3rem);
     text-align: left;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    padding: 0 50px 15px 50px;
   }
 }

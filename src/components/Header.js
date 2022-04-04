@@ -44,7 +44,7 @@ const Header = () => {
         <a href="#intro">Intro</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a className="resume">
+        <a className="resume" href="https://resume.creddle.io/resume/hcpmeb781kc" target='_blank' rel="noreferrer">
           <span>resume</span>
         </a>
       </nav>

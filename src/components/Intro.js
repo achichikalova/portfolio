@@ -12,7 +12,7 @@ const Intro = () => {
     <section className="intro" id="intro">
       <div className="magic">{span}</div>
       <div className="content">
-        <Parallax speed={10}>
+        <Parallax speed={5}>
           <h2>Antonina Chichikalova</h2>
         </Parallax>
         <Parallax speed={1}>
@@ -20,7 +20,7 @@ const Intro = () => {
             React JS Developer
           </h3>
         </Parallax>
-        <Parallax speed={-10}>
+        <Parallax speed={-5}>
           <p>
             Dedicated, efficient, organized, and driven web developer with
             experience in QA, that will always <em>go above and beyond</em> to

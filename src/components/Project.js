@@ -4,35 +4,37 @@ import { FiExternalLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { Parallax } from "react-scroll-parallax";
 
-const Project = () => {
+const Project = ({ data }) => {
   return (
     <div className="project">
-      <Parallax speed={10} style={{backdropFilter: 'blur(10px)'}}>
+      <Parallax speed={10} style={{ backdropFilter: "blur(10px)" }}>
         <div className="content">
-          <h3 className="title">My Project</h3>
+          <h3 className="title">{data.title}</h3>
           <div className="description">
-            <a href="#">
+            <a href={data.demo || data.source}>
               <img
-                src="https://github.com/achichikalova/Stacks/blob/main/frontend/public/static/images/readme/main_page.png?raw=true"
-                alt="title"
+                src={data.img}
+                alt={data.title}
               />
             </a>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-              architecto. Accusantium obcaecati ipsa voluptates velit.
+              {data.description}
             </p>
           </div>
           <ul className="tech" title="tech stack">
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Postgres</li>
+            {data.stacks.map(stack => {
+              return(
+                <li>{stack}</li>
+              )
+            })}
           </ul>
           <div className="links">
-            <a href="#" title="demo">
-              <FiExternalLink />
-            </a>
-            <a href="#" title="source code">
+            {data.demo &&
+              <a href={data.demo} title="demo">
+                <FiExternalLink />
+              </a>
+            }           
+            <a href={data.source} title="source code">
               <AiFillGithub />
             </a>
           </div>

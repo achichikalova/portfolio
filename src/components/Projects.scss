@@ -41,12 +41,17 @@
     justify-content: center;
     align-items: center;
   }
+
   .code {
     font-size: clamp(1.2rem, 2rem, 3rem);
     text-align: left;
     font-family: "Source Code Pro", monospace;
     width: 100%;
     padding: 2rem;
+
+    @media screen and (max-width: 1080px) {
+      padding: 0;
+    }
 
     @media screen and (max-width: 768px) {
       font-size: 1.2rem;

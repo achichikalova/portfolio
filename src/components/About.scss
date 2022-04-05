@@ -31,10 +31,19 @@ $primary: #00eeff;
         padding-right: 50px;
         text-align: justify;
       }
+
+      @media screen and (max-width: 480px) {
+        padding: 0;
+        width: auto;
+      }
     }
 
     @media screen and (max-width: 1080px) {
       flex-direction: column-reverse;
+    }
+    
+    @media screen and (max-width: 480px) {
+      margin: 0 auto;
     }
   }
 
@@ -43,7 +52,7 @@ $primary: #00eeff;
     text-align: left;
     font-family: "Source Code Pro", monospace;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     @media screen and (max-width: 768px) {
       font-size: 1.2rem;

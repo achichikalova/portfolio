@@ -48,6 +48,7 @@ $primary: #00eeff;
         transition: 2s;
       }
     }
+
     &:hover span::before {
       width: 0;
       height: 0;
@@ -144,5 +145,9 @@ $primary: #00eeff;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 120px 1rem 1rem 1rem;
   }
 }

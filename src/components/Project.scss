@@ -29,6 +29,10 @@
       font-size: clamp(1.5rem, 3rem, 4rem);
       margin-bottom: 2rem;
       text-align: right;
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.2rem;
+      }
     }
 
     .description {
@@ -39,7 +43,7 @@
 
       &:nth-child(even) {
         flex-direction: row-reverse;
-      }   
+      }    
     }
 
     img {
@@ -60,6 +64,10 @@
 
       @media screen and (max-width: 768px) {
         top: -7vh;
+      }
+
+      @media screen and (max-width: 480px) {
+        top: 14vh;
       }
     }
 
@@ -125,7 +133,7 @@
 
     @media only screen and (max-width: 1080px) {
       min-height: 30vh;
-    }
+    }  
   }
 
   @media only screen and (max-width: 1080px) {

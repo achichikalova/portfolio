@@ -11,7 +11,7 @@ const Project = ({ data }) => {
         <div className="content">
           <h3 className="title">{data.title}</h3>
           <div className="description">
-            <a href={data.demo || data.source}>
+            <a href={data.demo || data.source} target='_blank'>
               <Parallax speed={5}>
                 <img src={data.img} alt={data.title} />
               </Parallax>
@@ -25,11 +25,11 @@ const Project = ({ data }) => {
           </ul>
           <div className="links">
             {data.demo && (
-              <a href={data.demo} title="demo">
+              <a href={data.demo} title="demo" target='_blank'>
                 <FiExternalLink />
               </a>
             )}
-            <a href={data.source} title="source code">
+            <a href={data.source} title="source code" target='_blank'>
               <AiFillGithub />
             </a>
           </div>

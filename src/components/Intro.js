@@ -17,7 +17,7 @@ const Intro = () => {
         </Parallax>
         <Parallax speed={1}>
           <h3>
-            React JS Developer
+            Front End Developer
           </h3>
         </Parallax>
         <Parallax speed={-5}>

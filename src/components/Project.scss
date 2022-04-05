@@ -21,7 +21,8 @@
     filter: hue-rotate(90deg) brightness(70%) grayscale(50%);
     transition: all 0.2s ease-in-out;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       filter: none;
     }
 
@@ -43,7 +44,7 @@
 
       &:nth-child(even) {
         flex-direction: row-reverse;
-      }    
+      }
     }
 
     img {

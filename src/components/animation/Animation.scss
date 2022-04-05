@@ -1,5 +1,6 @@
 .animation {
-  .body, .hair{
+  .body,
+  .hair {
     animation: move 3s linear infinite alternate;
     transform-origin: bottom;
     transform-box: fill-box;
@@ -17,7 +18,7 @@
       transform: rotateZ(0deg);
     }
   }
-  
+
   @keyframes wave {
     from {
       transform: rotateZ(0deg);
@@ -28,6 +29,6 @@
   }
 
   @media screen and (max-width: 768px) {
-      padding-bottom: 50px;
+    padding-bottom: 50px;
   }
 }

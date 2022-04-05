@@ -4,8 +4,8 @@ import "./Intro.scss";
 
 const Intro = () => {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const span = numbers.map((num) => {
-    return <span style={{ "--i": num }}></span>;
+  const span = numbers.map((num, key) => {
+    return <span key={key} style={{ "--i": num }}></span>;
   });
 
   return (
@@ -16,9 +16,7 @@ const Intro = () => {
           <h2>Antonina Chichikalova</h2>
         </Parallax>
         <Parallax speed={1}>
-          <h3>
-            Front End Developer
-          </h3>
+          <h3>Front End Developer</h3>
         </Parallax>
         <Parallax speed={-5}>
           <p>

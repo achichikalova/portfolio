@@ -20,7 +20,14 @@ const Quote = () => {
   return (
     <div className="quote">
       <ImQuotesLeft className="decor" />
-      <Carousel autoPlay infiniteLoop showArrows={false} interval={10000} showStatus={false} showThumbs={false}>
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showArrows={false}
+        interval={10000}
+        showStatus={false}
+        showThumbs={false}
+      >
         {quote}
       </Carousel>
       <span>— Robert C. Martin —</span>

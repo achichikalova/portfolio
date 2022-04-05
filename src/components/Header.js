@@ -17,13 +17,13 @@ const Header = () => {
       }
       setY(window.scrollY);
     };
-    const handleTop = () => { 
+    const handleTop = () => {
       if (y === 0) {
         setTop(true);
       } else {
         setTop(false);
       }
-    }
+    };
     window.addEventListener("scroll", (e) => handleScroll(e));
     handleTop();
     return () => {
@@ -39,12 +39,20 @@ const Header = () => {
         backgroundColor: scrollUp && !top ? "#3636367e" : "transparent",
       }}
     >
-      <a href="/"><Logo /></a>
+      <a aria-label="Logo" href="/">
+        <Logo />
+      </a>
       <nav className="nav">
         <a href="#intro">Intro</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a className="resume" href="https://resume.creddle.io/resume/hcpmeb781kc" target='_blank' rel="noreferrer">
+        <a
+          role="button"
+          className="resume"
+          href="https://resume.creddle.io/resume/hcpmeb781kc"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>resume</span>
         </a>
       </nav>

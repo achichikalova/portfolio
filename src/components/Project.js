@@ -16,9 +16,7 @@ const Project = ({ data }) => {
           <h3 className="title">{data.title}</h3>
           <div className="description">
             <a href={data.demo || data.source} target="_blank" rel="noreferrer">
-              <Parallax speed={5}>
-                <img src={data.img} alt={data.title} />
-              </Parallax>
+              <img src={data.img} alt={data.title} />
             </a>
             <p>{data.description}</p>
           </div>

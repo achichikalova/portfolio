@@ -39,28 +39,24 @@
     }
 
     img {
-      max-width: 40vw;
+      max-width: 50vw;
       min-width: 250px;
       height: auto;
       position: absolute;
-      left: -70vw;
-      top: -15vh;
+      left: -8vw;
+      top: 13vh;
       border-radius: 1px;
       box-shadow: -5px 5px 0px 0px #7bebff, -10px 10px 0px 0px #a1ffff,
         -15px 15px 0px 0px #e1eeff;
 
       @media only screen and (max-width: 1080px) {
         max-width: 40vw;
-        left: -63vw;
-        top: -3vh;
+        left: -3vw;
+        top: 5vh;
       }
 
       @media screen and (max-width: 768px) {
-        top: -2vh;
-      }
-
-      @media screen and (max-width: 480px) {
-        top: 14vh;
+        top: 3vh;
       }
     }
 
@@ -149,7 +145,7 @@
         img {
           position: relative;
           box-shadow: none;
-          top: 0;
+          top: -1rem;
           left: 0;
         }
 

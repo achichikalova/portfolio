@@ -28,7 +28,11 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
-    padding-bottom: 50px;
+  svg {
+    @media screen and (max-width: 1080px) {
+      padding-bottom: 50px;
+      width: 70vw;
+      height: 30vh;
+    }
   }
 }

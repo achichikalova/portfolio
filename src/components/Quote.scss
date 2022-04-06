@@ -7,9 +7,10 @@
   margin: 0 auto;
   width: 70%;
   height: auto;
+  margin-bottom: 1.2rem;
 
   p {
-    font-size: clamp(3rem, 5rem, 6rem);
+    font-size: clamp(2rem, 5rem, 6rem);
     text-align: center;
     font-family: "Passions Conflict", cursive;
     color: rgba(255, 255, 255, 0.7);
@@ -18,19 +19,28 @@
     @media screen and (max-width: 768px) {
       font-size: 3rem;
     }
+
+    @media screen and (max-width: 480px) {
+      font-size: 2.5rem;
+    }
   }
 
   span {
     font-weight: bold;
+    font-size: clamp(.6rem, 1rem, 1.5rem);
   }
 
   .decor {
-    font-size: 4rem;
+    font-size: clamp(1.2rem, 3rem, 4rem);
     color: #350933;
     font-family: "Passions Conflict", cursive;
   }
 
   .carousel-root {
     width: 70vw;
+
+    @media screen and (max-width: 480px) {
+      width: 90vw;
+    }
   }
 }

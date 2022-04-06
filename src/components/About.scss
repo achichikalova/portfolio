@@ -35,6 +35,7 @@ $primary: #00eeff;
       @media screen and (max-width: 480px) {
         padding: 0;
         width: auto;
+        font-size: 1rem;
       }
     }
 
@@ -61,5 +62,9 @@ $primary: #00eeff;
 
   @media (max-width: 1080px) {
     padding: 0 50px 15px 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem 15px 1rem;
   }
 }

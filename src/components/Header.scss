@@ -109,5 +109,9 @@ $fontColor: rgba(255, 255, 255, 0.8);
         display: none;
       }
     }
+
+    @media screen and (max-width: 480px) {
+      width: 40vw;
+    }
   }
 }

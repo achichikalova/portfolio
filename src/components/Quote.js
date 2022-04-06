@@ -9,8 +9,8 @@ const Quote = () => {
     "Truth can only be found in one place: the code.",
     "Clean code always looks like it was written by someone who cares.",
     "Of course bad code can be cleaned up. But it's very expensive.",
-    "Honesty in small things is not a small thing.",
     "Would you rather Test-First, or Debug-Later ?",
+    "Clean code should read like well-written prose."
   ];
 
   const quote = quotes.map((quote, key) => {

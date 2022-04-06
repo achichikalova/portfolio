@@ -133,6 +133,10 @@ $primary: #00eeff;
       width: 100%;
       margin: 0 auto;
     }
+
+    @media screen and (max-width: 480px) {
+      margin: 1rem 0;
+    }
   }
 
   @keyframes animate {
@@ -150,6 +154,7 @@ $primary: #00eeff;
     flex-direction: column;
     min-height: auto;
     padding-top: 150px;
+    min-height: 100vh;
   }
 
   @media screen and (max-width: 768px) {

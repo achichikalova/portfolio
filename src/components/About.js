@@ -2,6 +2,7 @@ import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import "./About.scss";
 import Animation from "./animation/Animation";
+import ScrollTop from "./ScrollTop";
 
 const About = () => {
   return (
@@ -25,6 +26,7 @@ const About = () => {
         </Parallax>
       </div>
       <div className="code"> &lt;/about&gt;</div>
+      <ScrollTop />
     </section>
   );
 };

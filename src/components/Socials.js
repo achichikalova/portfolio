@@ -1,5 +1,5 @@
 import React from "react";
-import './Socials.scss';
+import "./Socials.scss";
 import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
 
 const Socials = () => {

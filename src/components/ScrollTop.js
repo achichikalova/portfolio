@@ -10,7 +10,13 @@ const ScrollTop = () => {
     });
   };
 
-  return <BsArrowUpCircle title="Go Top" className="scrollToTop" onClick={scrollToTop} />;
+  return (
+    <BsArrowUpCircle
+      title="Go Top"
+      className="scrollToTop"
+      onClick={scrollToTop}
+    />
+  );
 };
 
 export default ScrollTop;

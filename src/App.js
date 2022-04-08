@@ -6,11 +6,13 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import About from "./components/About";
 import Quote from "./components/Quote";
 import Header from "./components/Header";
+import Socials from "./components/Socials";
 
 function App() {
   return (
     <ParallaxProvider>
       <Header />
+      <Socials />
       <Intro />
       <Skills />
       <Projects />

@@ -11,8 +11,9 @@ $fontColor: rgba(255, 255, 255, 0.8);
   z-index: 11;
   position: fixed;
   transition: all 0.1s ease-in-out;
-  background-color: transparent;
+  background-color: var(--transparency);
   box-shadow: 0 10px 30px -10px #121212a9;
+  opacity: var(--opacity);
 
   nav {
     width: 40vw;
@@ -112,6 +113,13 @@ $fontColor: rgba(255, 255, 255, 0.8);
 
     @media screen and (max-width: 480px) {
       width: 40vw;
+      opacity: 1;
+      background-color: transparent;
     }
+  }
+  @media screen and (max-width: 480px) {
+    opacity: 1;
+    background-color: transparent;
+    position: sticky;
   }
 }

@@ -35,8 +35,8 @@ const Header = () => {
     <div
       className="header-container"
       style={{
-        opacity: scrollUp || top ? "1" : "0",
-        backgroundColor: scrollUp && !top ? "#3636367e" : "transparent",
+        '--opacity': scrollUp || top ? "1" : "0",
+        '--transparency': scrollUp && !top ? "#3636367e" : "transparent",
       }}
     >
       <a aria-label="Logo" href="/">

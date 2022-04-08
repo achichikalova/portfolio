@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "./animation/Logo";
+import { Link } from "react-scroll";
 import "./Header.scss";
 
 const Header = () => {
@@ -35,17 +36,17 @@ const Header = () => {
     <div
       className="header-container"
       style={{
-        '--opacity': scrollUp || top ? "1" : "0",
-        '--transparency': scrollUp && !top ? "#3636367e" : "transparent",
+        "--opacity": scrollUp || top ? "1" : "0",
+        "--transparency": scrollUp && !top ? "#3636367e" : "transparent",
       }}
     >
-      <a aria-label="Logo" href="/">
+      <Link aria-label="Logo" to="intro">
         <Logo />
-      </a>
+      </Link>
       <nav className="nav">
-        <a href="#intro">Intro</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <Link to="intro">Intro</Link>
+        <Link to="projects">Projects</Link>
+        <Link to="about">About</Link>
         <a
           role="button"
           className="resume"

@@ -1,0 +1,60 @@
+$primary: #00eeff;
+
+.socials {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  left: auto;
+  z-index: 10;
+  margin-bottom: 2rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+      color: $primary;
+      margin-bottom: 2rem;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    margin: 0px auto;
+    background-color: $primary;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}

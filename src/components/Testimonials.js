@@ -13,7 +13,7 @@ const Testimonials = () => {
       title: "Software Developer",
     },
     {
-      name: "Emily KeEmily Ke",
+      name: "Emily Ke",
       message:
         "I've worked with Antonina for my final project at LHL and I was impressed by her both her ability to demonstrate her understanding in of JS in React and initiative to take on additional tasks at hand. She is very hard-working and we worked well as a team. I would recommend Antonina to anyone, knowing that she will do her best to be successful. Great job Antonina keep up the good work!",
       title: "Full-Stack Web Developer",
@@ -44,7 +44,7 @@ const Testimonials = () => {
         autoPlay
         infiniteLoop
         showArrows={false}
-        interval={30000}
+        interval={40000}
         showStatus={false}
         showThumbs={false}
       >

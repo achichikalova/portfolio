@@ -15,6 +15,10 @@ $fontColor: rgba(255, 255, 255, 0.8);
   box-shadow: 0 10px 30px -10px #121212a9;
   opacity: var(--opacity);
 
+  .logo {
+    cursor: pointer;
+  }
+
   nav {
     width: 40vw;
     display: flex;
@@ -25,6 +29,7 @@ $fontColor: rgba(255, 255, 255, 0.8);
       text-decoration: none;
       color: $fontColor;
       font-size: clamp(1.2rem, 1.3rem, 1.5rem);
+      cursor: pointer;
 
       &:hover {
         color: $primary;

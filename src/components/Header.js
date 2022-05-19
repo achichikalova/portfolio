@@ -40,7 +40,7 @@ const Header = () => {
         "--transparency": scrollUp && !top ? "#3636367e" : "transparent",
       }}
     >
-      <Link aria-label="Logo" to="intro">
+      <Link aria-label="Logo" to="intro" className="logo">
         <Logo />
       </Link>
       <nav className="nav">

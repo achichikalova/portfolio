@@ -12,7 +12,7 @@ const Projects = () => {
     <section className="myProjects" id="projects">
       <div className="code"> &lt;projects&gt;</div>
       <div className="projects">{projects}</div>
-      <div className="code"> &lt;projects&gt;</div>
+      <div className="code"> &lt;/projects&gt;</div>
     </section>
   );
 };
